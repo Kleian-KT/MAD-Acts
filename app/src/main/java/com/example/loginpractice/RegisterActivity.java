@@ -1,6 +1,7 @@
 package com.example.loginpractice;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -117,6 +118,18 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         });
+
+        Spinner spnr1 = new Spinner(c);
+        int spnr1ID = spnr1.generateViewId();
+        spnr1.setId(spnr1ID);
+        spnr1.setLayoutParams(params);
+        spnr1.setPadding(50,50,50,50);
+
+        String colors[] = {"Red", "Blue"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(c, android.R.layout.simple_spinner_item, colors);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spnr1.setAdapter(adapter);
+        mainLL.addView(spnr1);
 
 
 

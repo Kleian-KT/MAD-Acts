@@ -192,7 +192,7 @@
                 />
 
             <CheckBox
-                android:id="@+id/cb1"
+                android:id="@+id/hob1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -200,11 +200,75 @@
                 />
 
             <CheckBox
-                android:id="@+id/cb2"
+                android:id="@+id/hob2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="HOBBY 1"
+                android:text="HOBBY 2"
+                />
+
+            <CheckBox
+                android:id="@+id/hob3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 3"
+                />
+
+            <CheckBox
+                android:id="@+id/hob4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 4"
+                />
+
+            <CheckBox
+                android:id="@+id/hob5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 5"
+                />
+
+            <CheckBox
+                android:id="@+id/hob6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 6"
+                />
+
+            <CheckBox
+                android:id="@+id/hob7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 7"
+                />
+
+            <CheckBox
+                android:id="@+id/hob8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 8"
+                />
+
+            <CheckBox
+                android:id="@+id/hob9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 9"
+                />
+
+            <CheckBox
+                android:id="@+id/hob10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HOBBY 10"
                 />
 
             <TextView
@@ -232,5 +296,4 @@
                 />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
