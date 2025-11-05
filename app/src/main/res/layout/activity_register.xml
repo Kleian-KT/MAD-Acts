@@ -278,22 +278,28 @@
                 />
 
             <Spinner
-                android:id="@+id/securitySpinner"
+                android:id="@+id/ques1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <Spinner
-                android:id="@+id/securitySpinner2"
+                android:id="@+id/ques2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <Spinner
-                android:id="@+id/securitySpinner3"
+                android:id="@+id/ques3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

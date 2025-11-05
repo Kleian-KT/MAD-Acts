@@ -1,5 +1,6 @@
 package com.example.loginpractice;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    Context c = this;
     EditText username, password, confirmPassword, fName, lName, email, address, conNum;
     TextView bday;
     RadioButton male, female, others;
@@ -39,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         //---------------------------------------------------------------------------------------------------------------------
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.registerPage), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -74,6 +76,19 @@ public class RegisterActivity extends AppCompatActivity {
         ques2 = findViewById(R.id.ques2);
         ques3 = findViewById(R.id.ques3);
         register = findViewById(R.id.register);
+
+        String questions[] = {
+                "What was the name of your first pet?",
+                "What is your mother's maiden name?",
+                "What was the make and model of your first car?",
+                "What city were you born in?",
+                "What is the name of your favorite teacher?"
+        };
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(c, android.R.layout.simple_spinner_item, questions);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        ques1.setAdapter(adapter);
+        ques2.setAdapter(adapter);
+        ques3.setAdapter(adapter);
 
     }
 
@@ -119,17 +134,18 @@ public class RegisterActivity extends AppCompatActivity {
 
         });
 
-        Spinner spnr1 = new Spinner(c);
-        int spnr1ID = spnr1.generateViewId();
-        spnr1.setId(spnr1ID);
-        spnr1.setLayoutParams(params);
-        spnr1.setPadding(50,50,50,50);
 
-        String colors[] = {"Red", "Blue"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(c, android.R.layout.simple_spinner_item, colors);
-        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spnr1.setAdapter(adapter);
-        mainLL.addView(spnr1);
+        if(ques1.getSelectedItem().toString()==ques2.getSelectedItem().toString() ||
+        ques1.getSelectedItem().toString()==ques3.getSelectedItem().toString() ||
+        ques3.getSelectedItem().toString()==ques2.getSelectedItem().toString())
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(c);
+            builder.setTitle("ATTENTION")
+                    .setMessage("Oughhh ulul! Bawal parehas, cuh!")
+                    .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                    .setCancelable(true)
+                    .show();
+        }
 
 
 
