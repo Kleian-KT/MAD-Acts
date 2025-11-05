@@ -6,6 +6,7 @@ import static android.widget.Toast.LENGTH_SHORT;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -173,6 +174,9 @@ public class MainActivity extends AppCompatActivity {
                         .setCancelable(true).show();
                 etPassword.setText("");
                 etUsername.setText("");
+
+                //Intent intent = new Intent(c, RegisterActivity.class);
+                //startActivity(intent);
             }
         });
 
