@@ -101,7 +101,7 @@
                 />
 
             <EditText
-                android:id="@+id/emailAddress"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter E-Mail"
@@ -115,6 +115,7 @@
                 />
 
             <EditText
+                android:id="@+id/bday"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Date of Birth"
@@ -135,21 +136,21 @@
                 >
 
                 <RadioButton
-                    android:id="@+id/maleRB"
+                    android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Male"
                     />
 
                 <RadioButton
-                    android:id="@+id/femaleRB"
+                    android:id="@+id/female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Female"
                     />
 
                 <RadioButton
-                    android:id="@+id/othersRB"
+                    android:id="@+id/others"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Others"
