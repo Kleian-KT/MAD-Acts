@@ -175,8 +175,8 @@ public class MainActivity extends AppCompatActivity {
                 etPassword.setText("");
                 etUsername.setText("");
 
-                //Intent intent = new Intent(c, RegisterActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(c, RegisterActivity.class);
+                startActivity(intent);
             }
         });
 

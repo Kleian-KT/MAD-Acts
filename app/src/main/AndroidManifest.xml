@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LogInPractice">
         <activity
+            android:name=".Welcome"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
